@@ -1,5 +1,5 @@
 let attempts = 0;
-const maxAttempts = 3;
+const maxAttempts = 5;
 
 function guessBtntrigger() {
     let randomNumber = Math.floor(Math.random() * 10) + 1;
