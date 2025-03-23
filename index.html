@@ -13,8 +13,9 @@
     <div class="game-container">
         <img src="logo.png" alt="Game Logo" class="logo">
         <h3 class="mb-3 text-primary">Number Guessing Game</h3>
+        <span class="badge bg-secondary" id="roundCount">Round: 0 / 3</span>
         <input type="number" class="form-control mb-2 mt-4" id="txtArea" placeholder="Enter a number (1-10)">
-        <button class="btn btn-primary w-100 mt-2" onclick="guessBtntrigger();">Guess</button>
+        <button class="btn btn-primary w-100 mt-2" onclick="guessBtntrigger();" id="guessButton">Guess</button>
         <p class="mt-3" id="resultMessage"></p>
     </div>
 
