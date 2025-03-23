@@ -19,7 +19,15 @@ function guessBtntrigger() {
     if (userGuess == randomNumber) {
         resultMessage.innerHTML = '<div class="alert alert-success">🎉 Correct! You guessed the number!</div>';
     } else {
-        resultMessage.innerHTML = '<div class="alert alert-danger">❌ Wrong! Try again.</div>';
+        if (userGuess > randomNumber) {
+            resultMessage.innerHTML = '<div class="alert alert-danger"> Try Another ⬇️ Number !</div>';
+        }else if(userGuess < randomNumber){
+            resultMessage.innerHTML = '<div class="alert alert-danger"> Try Another ⬆️ Number !</div>';
+        }else{
+            resultMessage.innerHTML = '<div class="alert alert-danger">❌ Something Went Wrong. !</div>';
+            return ;
+        }
+        
     }
     
     if (attempts >= maxAttempts) {
